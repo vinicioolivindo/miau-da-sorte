@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,21 @@
 <body>
     <main>
         <h1>Clique no gatinho e veja sua sorte!</h1>
-        <img src="assets/cat-img.png" alt="">
-        <button>Saber mais sobre este gatinho &UpArrow;</button>
+        <img id="cat" onclick="clickCat()" src="assets/cat-img.png" alt="">
+        </div>
+        <a href="https://pt.wikipedia.org/wiki/Maneki_Neko" target="_blank">Saiba mais sobre este gatinho &UpArrow;</a>
+        <div class="message hiddenClass">
+            <p id="randomMessage">
+
+            </p>
+        </div>
+        <button onclick="otherMessage()" class="otherMessage hiddenClass">Pedir outra mensagem ao gatinho</button>
     </main>
     <footer>
-        
+        <p>2024 - Miau da Sorte. Todos os direitos reservados</p>
+        <p>Entre em contato pelo email: vinicioolivindo81@gmail.com</p>
     </footer>
+    <script src="app.js"></script>
+    <script src="dados.js"></script>
 </body>
 </html>

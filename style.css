@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body, a{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -9,16 +16,78 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #cdcdcd;
+    background-color: aliceblue;
+}
+
+h1{
+    margin-top: 15px;
 }
 
 main{
     max-width: 500px;
-    padding: 20px;
+    padding: 25px;
     background-color: #EA4F36;
     border-radius: 15px;
+    margin-top: -40px;
     text-align: center;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
 }
 main img{
-    max-width: 400px;
+    max-width: 450px;
+    cursor: pointer;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
+.hiddenClass{
+    display: none;
+}
+
+.message{
+    margin-top: 10px;
+    padding: 16px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+    animation: showMessage 1s reverse;
+}
+
+#randomMessage{
+    color: slategray;
+    font-size: 30px;
+    font-family: "Dancing Script";
+    font-weight: 700;
+}
+
+.otherMessage{
+    margin-top: 15px;
+    border: none;
+    background: aliceblue;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(44, 43, 43);
+    cursor: pointer;
+}
+@keyframes showMessage{
+    100%{
+        transform: translateY(-180px) scale(0.2);
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
 }
