@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cdcdcd;
+}
+
+main{
+    max-width: 500px;
+    padding: 20px;
+    background-color: #EA4F36;
+    border-radius: 15px;
+    text-align: center;
+}
+main img{
+    max-width: 400px;
+}
