@@ -91,3 +91,22 @@ footer{
     color: black;
     text-align: center;
 }
+
+@media (max-width: 500px) {
+    main{
+        width: 95%;
+    }
+    main img{
+        max-width: 100%;
+    }
+    h1{
+        font-size: 21px;
+    }
+    main a, .otherMessage, footer{
+        font-size: 14px;
+    }
+
+    #randomMessage{
+        font-size: 22px;
+    }
+}
